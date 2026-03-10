@@ -10,8 +10,8 @@
 int main(int argc, char **argv) {
 	QApplication QtApplication(argc, argv);
 
-	MainGui mainWindow{};
+	std::unique_ptr<MainGui> mainWindow = std::make_unique<MainGui>();
+	mainWindow->show();
 
-	mainWindow.show();
 	QtApplication.exec();
 }

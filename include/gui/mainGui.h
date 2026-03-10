@@ -16,7 +16,6 @@
 #include <QtWidgets/QWidget>
 #include <qmainwindow.h>
 #include <qpushbutton.h>
-#include <qtmetamacros.h>
 
 class MainGui : public QMainWindow {
 	Q_OBJECT
@@ -26,20 +25,22 @@ class MainGui : public QMainWindow {
 	QWidget *centralwidget;
 	QVBoxLayout *verticalLayout;
 	QPushButton *randomSelectButton;
-	QLabel *selectedPersonName;
 	QListWidget *personList;
 	QHBoxLayout *addingLayout;
 	QLineEdit *personNameEditor;
 	QPushButton *addPersonButton;
+	QPushButton *removePersonButton;
 	QHBoxLayout *importingAndExportingLayout;
 	QPushButton *importButton;
 	QPushButton *exportButton;
-	QMenuBar *menubar;
-	QStatusBar *statusbar;
-
-	void retranslateUi();
+	QMenuBar *menubar{};
+	QStatusBar *statusbar{};
 
 	void pickRandomAction();
+	void deleteItem();
+	void addItem();
+	void exportList();
+	void importList();
 };
 
 #endif // DESIGNERBEPGDS_H

@@ -2,6 +2,8 @@
 
 A small little program I made in C++, CMake and Qt, for randomly picking names out of a list.
 
+**Reminder:** This program is entirelty in Turkish. As it was made due to a request from a turkish teacher.
+
 ## Requirements
 
 - C++ 11 
