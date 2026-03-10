@@ -1,0 +1,4 @@
+{
+    "cmake.useCMakePresets": "never",
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json"
+}
